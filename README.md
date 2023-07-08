@@ -1,6 +1,6 @@
 # RimWorld / Gas Vents
 
-![image](About/preview.png)
+![image](About/Preview.png)
 
 A RimWorld mod that adds gas-releasing electrically powered vents.
 
