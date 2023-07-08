@@ -1,4 +1,4 @@
-# RimWorld / Gas Vents (Vanilla Only Edition)
+# RimWorld / Gas Vents (Vanilla Only Edition) ![image](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-steam-workshop.jross.me%2F3001115632)
 
 ![image](About/Preview.png)
 
