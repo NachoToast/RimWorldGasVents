@@ -33,21 +33,6 @@ namespace GasVents
             DrawGasAmount(listingStandard);
 
             listingStandard.End();
-
-            /*string gasAmountTooltip = "GasVents.Settings.GasAmount.Tooltip".Translate() + "\n\n" +
-                "GasVents.Settings.DefaultPrefix".Translate() +
-                GasVentSettings.defaultGasAmount.ToString();
-
-            string gasAmountLabel = "GasVents.Settings.GasAmount.Label".Translate() + ": " + gasAmount.ToString() + " (" + ((int)(100 * gasAmount / 255f)).ToString() + "%)";
-
-            gasAmount = 5 * (int)Mathf.Round(listingStandard.SliderLabeled(gasAmountLabel, gasAmount, 0, 512, 0.3f, gasAmountTooltip) / 5);
-
-            if (listingStandard.ButtonText("GasVents.Settings.ResetToDefault".Translate(), null, 0.2f))
-            {
-                gasAmount = GasVentSettings.defaultGasAmount;
-            }
-
-            listingStandard.End();*/
         }
 
 
