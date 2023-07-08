@@ -1,4 +1,4 @@
-# RimWorld / Gas Vents
+# RimWorld / Gas Vents ![image](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-steam-workshop.jross.me%2F3001066867)
 
 ![image](About/Preview.png)
 
