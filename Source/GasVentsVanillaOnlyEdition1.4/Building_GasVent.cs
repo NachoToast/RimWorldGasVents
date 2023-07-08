@@ -1,5 +1,4 @@
 ﻿using RimWorld;
-using SCGF;
 using Verse;
 
 namespace GasVents
@@ -24,11 +23,7 @@ namespace GasVents
             refuelableComp = GetComp<CompRefuelable>();
 
             IdentifyingGas identifyingGas = def.GetModExtension<IdentifyingGas>();
-            if (identifyingGas?.gasDef != null)
-            {
-                gasType = (GasType) (GasLibrary.firstCustomGasIndex + identifyingGas.gasDef.customIndex);
-            }
-            else if (identifyingGas?.gasType != null)
+            if (identifyingGas?.gasType != null)
             {
                 gasType = identifyingGas.gasType;
             }
@@ -39,7 +34,7 @@ namespace GasVents
             }
             else
             {
-                Log.Error(def + " has no gasType or gasDef in its mod extension to indicate what type of gas it should emit, defaulting to blind smoke.");
+                Log.Error(def + " has no gasType in its mod extension to indicate what type of gas it should emit, defaulting to blind smoke.");
                 gasType = GasType.BlindSmoke;
             }
         }

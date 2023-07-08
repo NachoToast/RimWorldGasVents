@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ModMetaData>
-	<name>Gas Vents</name>
+	<name>Gas Vents (Vanilla Only Edition)</name>
 	<author>NachoToast</author>
-	<packageId>NachoToast.GasVents</packageId>
+	<packageId>NachoToast.GasVents.VanillaOnlyEdition</packageId>
 	<modVersion>1.0.0</modVersion>
 	<url>https://github.com/NachoToast/RimWorldGasVents</url>
 	<supportedVersions>
@@ -13,21 +13,9 @@
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>Ludeon.RimWorld.Biotech</li>
-        <li>NachoToast.SCGF</li>
 	</loadAfter>
-    <modDependencies>
-        <li>
-            <packageId>brrainz.harmony</packageId>
-            <displayName>Harmony</displayName>
-            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
-            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
-        </li>
-		<li>
-			<packageId>NachoToast.SCGF</packageId>
-            <displayName>Simple Custom Gas Framework</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/2999444522</steamWorkshopUrl>
-            <downloadUrl>https://github.com/NachoToast/SimpleCustomGasFramework/releases/latest</downloadUrl>
-		</li>
-    </modDependencies>
-	<description>Create gas vents that can be loaded with gases and slowly disperse them over time when powered. Custom gases supported.</description>
+	<incompatibleWith>
+		<li>NachoToast.GasVents</li>
+	</incompatibleWith>
+	<description>Create gas vents that can be loaded with gases and slowly disperse them over time when powered. Custom gases not supported.</description>
 </ModMetaData>
