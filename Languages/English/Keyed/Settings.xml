@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- mod settings tab -->
+    <GasVents>Gas Vents</GasVents>
+    <GasVents.Settings.DefaultSuffix> This is the default value.</GasVents.Settings.DefaultSuffix>
+    <GasVents.Settings.ResetToDefault>Reset to Default</GasVents.Settings.ResetToDefault>
+
+    <GasVents.Settings.FuelConsumptionRate.Label>Fuel Consumption Rate: {0}</GasVents.Settings.FuelConsumptionRate.Label>
+    <GasVents.Settings.FuelConsumptionRate.Tooltip>How many units of fuel vents should consume every time they emit gas.\nNote that 1 shell = 10 units.\n\nDefault: {0}</GasVents.Settings.FuelConsumptionRate.Tooltip>
+    <GasVents.Settings.FuelConsumptionRate.Description.Single>A powered vent will use 1 shell every hour.</GasVents.Settings.FuelConsumptionRate.Description.Single>
+    <GasVents.Settings.FuelConsumptionRate.Description.Multi>A powered vent will use 1 shell every {0} hours.</GasVents.Settings.FuelConsumptionRate.Description.Multi>
+    <GasVents.Settings.FuelConsumptionRate.Description.Infinite>A powered vent will never run out of fuel.</GasVents.Settings.FuelConsumptionRate.Description.Infinite>
+
+    <GasVents.Settings.GasAmount.Label>Gas Production Amount: {0}</GasVents.Settings.GasAmount.Label>
+    <GasVents.Settings.GasAmount.Tooltip>How much gas the vents should emit.\n\nDefault: {0}</GasVents.Settings.GasAmount.Tooltip>
+    <GasVents.Settings.GasAmount.Description.Zero>Each emission will not increase the density of gas.</GasVents.Settings.GasAmount.Description.Zero>
+    <GasVents.Settings.GasAmount.Description.Normal>Each emission will increase the density of gas by {0}%.</GasVents.Settings.GasAmount.Description.Normal>
+    <GasVents.Settings.GasAmount.Description.Overflow>Each emission will increase the density of gas by {0}%, instantly spilling out onto adjacent cells if possible.</GasVents.Settings.GasAmount.Description.Overflow>
+
+</LanguageData>
