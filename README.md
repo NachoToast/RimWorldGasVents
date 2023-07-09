@@ -10,6 +10,7 @@ See also:
 
 - [Knockout gas](https://github.com/NachoToast/RimWorldKnockoutGas)
 - [Tear gas](https://github.com/NachoToast/RimWorldTearGas)
+- [Mustard gas](https://github.com/NachoToast/RimWorldMustardGas)
 
 This utilizes my [Simple Custom Gas Framework](https://github.com/NachoToast/SimpleCustomGasFramework) for compatibility with custom gas types, a version of this mod for only the vanilla gas types that does not require this framework can be located on the [vanilla](https://github.com/NachoToast/RimWorldGasVents/tree/vanilla) branch.
 
