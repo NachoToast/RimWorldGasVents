@@ -99,7 +99,7 @@
 
     </ThingDef>
 
-    <ThingDef ParentName="GasVent_Base">
+    <ThingDef MayRequire="Ludeon.Rimworld.Biotech" ParentName="GasVent_Base">
         <defName>GasVent_Tox</defName>
         <label>gas vent (tox)</label>
         <description>A vent that can be loaded with tox gas shells to produce tox gas when powered.</description>
