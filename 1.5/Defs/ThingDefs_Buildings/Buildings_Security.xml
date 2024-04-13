@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="GasVent_Base" ParentName="BuildingBase" Abstract="True">
+        <thingClass>GasVents.Building_GasVent</thingClass>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,2)</drawSize>
+            <damageData>
+                <rect>(0.05, 0.05, 0.95, 0.95)</rect>
+            </damageData>
+        </graphicData>
+        <uiIconOffset>(0, 0.5)</uiIconOffset>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <rotatable>true</rotatable>
+        <tickerType>Rare</tickerType>
+        <stealable>false</stealable>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <designationCategory>Security</designationCategory>
+        <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+
+        <designatorDropdown>GasVent</designatorDropdown>
+        <resourcesFractionWhenDeconstructed>1.0</resourcesFractionWhenDeconstructed>
+        <defaultPlacingRot>South</defaultPlacingRot>
+
+        <thingCategories>
+            <li>BuildingsSecurity</li>
+        </thingCategories>
+
+        <researchPrerequisites>
+            <li>GasOperation</li>
+        </researchPrerequisites>
+
+        <placeWorkers>
+            <li>PlaceWorker_NeverAdjacentTrap</li>
+        </placeWorkers>
+
+        <costList>
+            <Steel>20</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+
+        <statBases>
+            <Mass>1</Mass>
+            <WorkToBuild>1400</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+
+        <building>
+            <isTrap>true</isTrap>
+            <expandHomeArea>false</expandHomeArea>
+            <ai_chillDestination>false</ai_chillDestination>
+            <isInert>true</isInert>
+            <paintable>true</paintable>
+        </building>
+
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>40</basePowerConsumption>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="GasVent_Base">
+        <defName>GasVent_Smoke</defName>
+        <label>gas vent (smoke)</label>
+        <description>A vent that can be loaded with smoke shells to produce smoke when powered.</description>
+
+        <graphicData>
+            <texPath>Things/Building/Security/GasVent_Smoke</texPath>
+        </graphicData>
+
+        <comps>
+            <li Class="CompProperties_Refuelable">
+                <fuelCapacity>50</fuelCapacity>
+                <fuelMultiplier>10</fuelMultiplier>
+                <fuelLabel>Smoke shells</fuelLabel>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+                <autoRefuelPercent>0.8</autoRefuelPercent>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <showFuelGizmo>true</showFuelGizmo>
+
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Shell_Smoke</li>
+                    </thingDefs>
+                </fuelFilter>
+            </li>
+        </comps>
+
+        <modExtensions>
+            <li Class="GasVents.IdentifyingGas">
+                <gasType>BlindSmoke</gasType>
+            </li>
+        </modExtensions>
+
+    </ThingDef>
+
+    <ThingDef MayRequire="Ludeon.Rimworld.Biotech" ParentName="GasVent_Base">
+        <defName>GasVent_Tox</defName>
+        <label>gas vent (tox)</label>
+        <description>A vent that can be loaded with tox gas shells to produce tox gas when powered.</description>
+
+        <graphicData>
+            <texPath>Things/Building/Security/GasVent_Tox</texPath>
+        </graphicData>
+
+        <comps>
+            <li Class="CompProperties_Refuelable">
+                <fuelCapacity>50</fuelCapacity>
+                <fuelMultiplier>10</fuelMultiplier>
+                <fuelLabel>Tox gas shells</fuelLabel>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+                <autoRefuelPercent>0.8</autoRefuelPercent>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <showFuelGizmo>true</showFuelGizmo>
+
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Shell_Toxic</li>
+                    </thingDefs>
+                </fuelFilter>
+            </li>
+        </comps>
+
+        <modExtensions>
+            <li Class="GasVents.IdentifyingGas">
+                <gasType>ToxGas</gasType>
+            </li>
+        </modExtensions>
+
+    </ThingDef>
+
+</Defs>

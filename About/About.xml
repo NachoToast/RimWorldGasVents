@@ -3,10 +3,11 @@
 	<name>Gas Vents (Vanilla Only Edition)</name>
 	<author>NachoToast</author>
 	<packageId>NachoToast.GasVents.VanillaOnlyEdition</packageId>
-	<modVersion>1.0.1</modVersion>
+	<modVersion>1.0.2</modVersion>
 	<url>https://github.com/NachoToast/RimWorldGasVents</url>
 	<supportedVersions>
 		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
