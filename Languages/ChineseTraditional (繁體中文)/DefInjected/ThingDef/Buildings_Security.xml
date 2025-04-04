@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: gas vent (smoke) -->
+  <GasVent_Smoke.label>氣體排放口(煙霧)</GasVent_Smoke.label>
+  <!-- EN: 一種可裝填煙霧彈的氣體排放口，通電時會旁放煙霧。 -->
+  <GasVent_Smoke.description>一種可裝填煙霧砲彈的氣體排放口，通電時會旁放煙霧。</GasVent_Smoke.description>
+  <!-- EN: Smoke shells -->
+  <GasVent_Smoke.comps.CompRefuelable.fuelLabel>煙霧砲彈</GasVent_Smoke.comps.CompRefuelable.fuelLabel>
+  
+  <!-- EN: gas vent (tox) -->
+  <GasVent_Tox.label>氣體排放口(毒氣)</GasVent_Tox.label>
+  <GasVent_Tox.description>一種可裝填毒氣砲彈的氣體排放口，通電時會釋放毒氣。</GasVent_Tox.description>
+  <!-- EN: Tox gas shells -->
+  <GasVent_Tox.comps.CompRefuelable.fuelLabel>毒氣砲彈</GasVent_Tox.comps.CompRefuelable.fuelLabel>
+  
+</LanguageData>

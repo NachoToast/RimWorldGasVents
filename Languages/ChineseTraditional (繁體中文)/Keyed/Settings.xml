@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <GasVents>氣體排放口</GasVents>
+  <GasVents.Settings.DefaultSuffix>預設值</GasVents.Settings.DefaultSuffix>
+  <GasVents.Settings.ResetToDefault>重設為預設值</GasVents.Settings.ResetToDefault>
+
+    <!-- EN: Fuel Consumption Rate: {0} -->
+  <GasVents.Settings.FuelConsumptionRate.Label>消耗速度: {0}</GasVents.Settings.FuelConsumptionRate.Label>
+  <GasVents.Settings.FuelConsumptionRate.Tooltip>每次排放氣體時消耗單位 \n注意 1 填充砲彈 = 10單位\n\nDefault: {0} </GasVents.Settings.FuelConsumptionRate.Tooltip>
+  <GasVents.Settings.FuelConsumptionRate.Description.Single>運作排放氣體每小時將消耗 1 填充砲彈</GasVents.Settings.FuelConsumptionRate.Description.Single>
+  <GasVents.Settings.FuelConsumptionRate.Description.Multi>運作排放氣體每{0}小時將消耗 1 填充砲彈</GasVents.Settings.FuelConsumptionRate.Description.Multi>
+  <GasVents.Settings.FuelConsumptionRate.Description.Infinite>運作排放氣體將不會有消耗</GasVents.Settings.FuelConsumptionRate.Description.Infinite>
+
+  <GasVents.Settings.GasAmount.Label>氣體產生量: {0}</GasVents.Settings.GasAmount.Label>
+  <GasVents.Settings.GasAmount.Tooltip>排放口應排放多少氣體\n\nDefault: {0}</GasVents.Settings.GasAmount.Tooltip>
+  <GasVents.Settings.GasAmount.Description.Zero>每次排放氣體將不會提高氣體濃度</GasVents.Settings.GasAmount.Description.Zero>
+  <GasVents.Settings.GasAmount.Description.Normal>每次排放氣體將提高氣體濃度 {0}%</GasVents.Settings.GasAmount.Description.Normal>
+  <GasVents.Settings.GasAmount.Description.Overflow>每次排放氣體將提高氣體濃度 {0}% 如果可以將會擴散到鄰近單元格</GasVents.Settings.GasAmount.Description.Overflow>
+
+</LanguageData>
