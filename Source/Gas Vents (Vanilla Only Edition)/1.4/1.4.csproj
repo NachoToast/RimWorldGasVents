@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Authors>NachoToast</Authors>
+    <Copyright>Copyright (c) 2025 NachoToast</Copyright> 
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>preview</LangVersion>
+    <OutDir>..\..\..\1.4\Assemblies\</OutDir>
+    <!-- Advanced -->
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Optimize>true</Optimize>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisLevel>preview-recommended</AnalysisLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <!-- Other -->
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <NoWarn>CS1591;IDE0005;</NoWarn>
+    <AssemblyName>GasVents</AssemblyName>
+    <RootNamespace>GasVents</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.*" />
+
+    <PackageReference Include="Lib.Harmony" Version="2.*" ExcludeAssets="runtime" />
+
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+</Project>

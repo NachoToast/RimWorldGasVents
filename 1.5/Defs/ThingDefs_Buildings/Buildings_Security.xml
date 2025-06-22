@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
     <ThingDef Name="GasVent_Base" ParentName="BuildingBase" Abstract="True">
@@ -20,7 +20,6 @@
         <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 
         <designatorDropdown>GasVent</designatorDropdown>
-        <resourcesFractionWhenDeconstructed>1.0</resourcesFractionWhenDeconstructed>
         <defaultPlacingRot>South</defaultPlacingRot>
 
         <thingCategories>
@@ -55,7 +54,7 @@
         </building>
 
         <comps>
-            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Flickable" />
 
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
@@ -129,6 +128,41 @@
         <modExtensions>
             <li Class="GasVents.IdentifyingGas">
                 <gasType>ToxGas</gasType>
+            </li>
+        </modExtensions>
+
+    </ThingDef>
+
+    <ThingDef MayRequire="Ludeon.Rimworld.Anomaly" ParentName="GasVent_Base">
+        <defName>GasVent_Deadlife</defName>
+        <label>gas vent (deadlife)</label>
+        <description>A vent that can be loaded with deadlife shells to produce deadlife dust when powered.</description>
+
+        <graphicData>
+            <texPath>Things/Building/Security/GasVent_Deadlife</texPath>
+        </graphicData>
+
+        <comps>
+            <li Class="CompProperties_Refuelable">
+                <fuelCapacity>50</fuelCapacity>
+                <fuelMultiplier>10</fuelMultiplier>
+                <fuelLabel>Deadlife shells</fuelLabel>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+                <autoRefuelPercent>0.8</autoRefuelPercent>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <showFuelGizmo>true</showFuelGizmo>
+
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Shell_Deadlife</li>
+                    </thingDefs>
+                </fuelFilter>
+            </li>
+        </comps>
+
+        <modExtensions>
+            <li Class="GasVents.IdentifyingGas">
+                <gasType>DeadlifeDust</gasType>
             </li>
         </modExtensions>
 

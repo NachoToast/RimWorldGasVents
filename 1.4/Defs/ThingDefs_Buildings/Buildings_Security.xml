@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
     <ThingDef Name="GasVent_Base" ParentName="BuildingBase" Abstract="True">
@@ -20,7 +20,6 @@
         <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 
         <designatorDropdown>GasVent</designatorDropdown>
-        <resourcesFractionWhenDeconstructed>1.0</resourcesFractionWhenDeconstructed>
         <defaultPlacingRot>South</defaultPlacingRot>
 
         <thingCategories>
@@ -55,7 +54,7 @@
         </building>
 
         <comps>
-            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Flickable" />
 
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>

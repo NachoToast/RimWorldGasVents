@@ -1,0 +1,11 @@
+{
+    "[xml]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "redhat.vscode-xml",
+        "files.insertFinalNewline": true,
+        "files.trimTrailingWhitespace": true
+    },
+    "xml.format.maxLineWidth": 0,
+    "xml.format.enforceQuoteStyle": "preferred",
+    "xml.preferences.quoteStyle": "double"
+}

@@ -2,8 +2,8 @@
 <Configuration>
   <Excluded>
     <exclude>.git</exclude>
-    <exclude>LICENSE</exclude>
-    <exclude>README.md</exclude>
     <exclude>Source</exclude>
+    <exclude>.gitignore</exclude>
+    <exclude>README.md</exclude>
   </Excluded>
 </Configuration>
