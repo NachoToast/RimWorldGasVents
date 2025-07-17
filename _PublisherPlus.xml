@@ -5,7 +5,6 @@
     <exclude>.vscode</exclude>
     <exclude>1.4\Assemblies\GasVents.pdb</exclude>
     <exclude>1.5\Assemblies\GasVents.pdb</exclude>
-    <exclude>1.6\Assemblies\GasVents.pdb</exclude>
     <exclude>README.md</exclude>
     <exclude>Source</exclude>
   </Excluded>
